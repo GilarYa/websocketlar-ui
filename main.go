@@ -49,7 +49,7 @@ func runHub() {
 func main() {
 	app := fiber.New()
 
-	app.Static("/", "./home.html")
+	app.Static("/", "./chat.html")
 
 	app.Use(func(c *fiber.Ctx) {
 		if websocket.IsWebSocketUpgrade(c) { // Returns true if the client requested upgrade to the WebSocket protocol
