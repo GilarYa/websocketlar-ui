@@ -94,7 +94,7 @@
 </section>
 <script>
     $(function() {
-        var socket = new WebSocket("wss://websocketlar-24b9ad7bb1e3.herokuapp.com/ws?username=" + encodeURIComponent($('#username').val()));
+        var socket = new WebSocket("wss://websocketlar-eec7510a0dd8.herokuapp.com/ws?username=" + encodeURIComponent($('#username').val()));
 
         socket.onmessage = function(event) {
             var message = JSON.parse(event.data);
